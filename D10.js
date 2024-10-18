@@ -430,11 +430,26 @@ console.log(matchMovies);
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
-*/
-
+*/ console.log("____esercizio 20____");
+const selectDiv = (id) => {
+  const div = document.getElementById(id);
+  if (div) {
+    return div;
+  }
+};
+const divContainer = selectDiv("container");
+console.log(divContainer);
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+const selectTd = (tag) => {
+  const td = document.getElementsByTagName(tag);
+  if (td) {
+    return td;
+  }
+};
+const td = selectTd("td");
+console.log(td);
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
